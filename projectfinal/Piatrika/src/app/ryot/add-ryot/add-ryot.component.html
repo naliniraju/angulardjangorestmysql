@@ -1,0 +1,270 @@
+<div [hidden]="submitted">
+  <form #addRyotDetailForm="ngForm">
+
+
+
+    <div class="form-group col-md-4">
+      <label for="ryotcode">Ryot Code</label>
+      <input type="text" class="form-control" id="ryotcode" placeholder="Enter ryotcode" required
+        [(ngModel)]="ryot.ryotcode" name="ryotcode" #ryotcode="ngModel">
+      <div [hidden]="ryotcode.valid || ryotcode.pristine" class="alert alert-danger">
+        Ryot Code is required
+      </div>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="ryotname">Ryot Name</label>
+      <input type="text" class="form-control" id="ryotname" placeholder="Enyter ryotname" required
+        [(ngModel)]="ryot.ryotname" name="ryotname" #ryotname="ngModel">
+      <div [hidden]="ryotname.valid || ryotname.pristine" class="alert alert-danger">
+        Ryot Name is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="grouprefno">Group Ref No</label>
+      <input type="text" class="form-control" id="grouprefno" placeholder="Enter grouprefno" required
+        [(ngModel)]="ryot.grouprefno" name="grouprefno" #grouprefno="ngModel">
+      <div [hidden]="grouprefno.valid || grouprefno.pristine" class="alert alert-danger">
+        Group Ref No is required
+      </div>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="fwgname">F/W/G Name</label>
+      <input type="text" class="form-control" id="fwgname" placeholder="Enter fwgname" required
+        [(ngModel)]="ryot.fwgname" name="fwgname" #fwgname="ngModel">
+      <div [hidden]="fwgname.valid || fwgname.pristine" class="alert alert-danger">
+        F/W/G Name is required
+      </div>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="villagecode">Village Code</label>
+      <input type="text" class="form-control" id="villagecode" placeholder="Enter villagecode" required
+        [(ngModel)]="ryot.villagecode" name="villagecode" #villagecode="ngModel">
+      <div [hidden]="villagecode.valid || villagecode.pristine" class="alert alert-danger">
+        Village Code is required
+      </div>
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <label for="villagename">Village Name</label>
+      <input type="text" class="form-control" id="villagename" placeholder="Enter villagename" required
+        [(ngModel)]="ryot.villagename" name="villagename" #villagename="ngModel">
+      <div [hidden]="villagename.valid || villagename.pristine" class="alert alert-danger">
+        Village Name is required
+      </div>
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <label for="mandalcode">Mandal Code</label>
+      <input type="text" class="form-control" id="mandalcode" placeholder="Enter mandalcode" required
+        [(ngModel)]="ryot.mandalcode" name="mandalcode" #mandalcode="ngModel">
+      <div [hidden]="mandalcode.valid || mandalcode.pristine" class="alert alert-danger">
+        Mandal Code is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="mandalname">Mandal Name</label>
+      <input type="text" class="form-control" id="mandalname" placeholder="Enter mandalname" required
+        [(ngModel)]="ryot.mandalname" name="mandalname" #mandalname="ngModel">
+      <div [hidden]="mandalname.valid || mandalname.pristine" class="alert alert-danger">
+        Mandal Name is required
+      </div>
+    </div>
+
+
+    <div class="form-group col-md-4">
+      <label for="csicode">CSI Code</label>
+      <input type="text" class="form-control" id="csicode" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.csicode" name="csicode" #csicode="ngModel">
+      <div [hidden]="csicode.valid || csicode.pristine" class="alert alert-danger">
+        CSI Code is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="csiname">CSI Name</label>
+      <input type="text" class="form-control" id="csiname" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.csiname" name="csiname" #csiname="ngModel">
+      <div [hidden]="csiname.valid || csiname.pristine" class="alert alert-danger">
+        CSI Name is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="sectioncode">Section Code</label>
+      <input type="text" class="form-control" id="sectioncode" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.sectioncode" name="sectioncode" #sectioncode="ngModel">
+      <div [hidden]="sectioncode.valid || sectioncode.pristine" class="alert alert-danger">
+        Section Code is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="sectionname">Section Name</label>
+      <input type="text" class="form-control" id="sectionname" placeholder="Enter sectionname" required
+        [(ngModel)]="ryot.sectionname" name="sectionname" #sectionname="ngModel">
+      <div [hidden]="sectionname.valid || sectionname.pristine" class="alert alert-danger">
+        Section Name is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="literarystatus">Literary Status</label>
+      <input type="text" class="form-control" id="literarystatus" placeholder="Enter literarystatus"
+        required [(ngModel)]="ryot.literarystatus" name="literarystatus" #literarystatus="ngModel">
+      <div [hidden]="literarystatus.valid || literarystatus.pristine" class="alert alert-danger">
+        Literary Status is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.email" name="email" #email="ngModel">
+      <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+        Email is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="address1">Address1</label>
+      <input type="text" class="form-control" id="address1" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.address1" name="address1" #address1="ngModel">
+      <div [hidden]="address1.valid || address1.pristine" class="alert alert-danger">
+        Address1 is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="address2">Address2</label>
+      <input type="text" class="form-control" id="address2" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.address2" name="address2" #address2="ngModel">
+      <div [hidden]="address2.valid || address2.pristine" class="alert alert-danger">
+        Address2 is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.city" name="city" #city="ngModel">
+      <div [hidden]="city.valid || city.pristine" class="alert alert-danger">
+        City is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="paymode">Paymode</label>
+      <input type="text" class="form-control" id="paymode" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.paymode" name="paymode" #paymode="ngModel">
+      <div [hidden]="paymode.valid || paymode.pristine" class="alert alert-danger">
+        Paymode is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="landno">Land No.</label>
+      <input type="text" class="form-control" id="landno" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.landno" name="landno" #landno="ngModel">
+      <div [hidden]="landno.valid || landno.pristine" class="alert alert-danger">
+        Land No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="mobileno">Mobile No.</label>
+      <input type="text" class="form-control" id="mobileno" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.mobileno" name="mobileno" #mobileno="ngModel">
+      <div [hidden]="mobileno.valid || mobileno.pristine" class="alert alert-danger">
+        Mobile No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="bankcode">Bank Code</label>
+      <input type="text" class="form-control" id="bankcode" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.bankcode" name="bankcode" #bankcode="ngModel">
+      <div [hidden]="bankcode.valid || bankcode.pristine" class="alert alert-danger">
+        Bank Code is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="bankname">Bank Name</label>
+      <input type="text" class="form-control" id="bankname" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.bankname" name="bankname" #bankname="ngModel">
+      <div [hidden]="bankname.valid || bankname.pristine" class="alert alert-danger">
+        Bank Name is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="sbacno">SB A/C No.</label>
+      <input type="text" class="form-control" id="sbacno" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.sbacno" name="sbacno" #sbacno="ngModel">
+      <div [hidden]="sbacno.valid || sbacno.pristine" class="alert alert-danger">
+        SB A/C No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="loanacno">Loan A/C No.</label>
+      <input type="text" class="form-control" id="loanacno" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.loanacno" name="loanacno" #loanacno="ngModel">
+      <div [hidden]="loanacno.valid || loanacno.pristine" class="alert alert-danger">
+        Loan A/C No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="ledgerno">Ledger No.</label>
+      <input type="text" class="form-control" id="ledgerno" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.ledgerno" name="ledgerno" #ledgerno="ngModel">
+      <div [hidden]="ledgerno.valid || ledgerno.pristine" class="alert alert-danger">
+        Ledger No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="loanaccountledgerno">Loan Account Ledger No.</label>
+      <input type="text" class="form-control" id="loanaccountledgerno" placeholder="Enter Agreement Acre"
+        required [(ngModel)]="ryot.loanaccountledgerno" name="loanaccountledgerno"
+        #loanaccountledgerno="ngModel">
+      <div [hidden]="loanaccountledgerno.valid || loanaccountledgerno.pristine" class="alert alert-danger">
+        Loan Account Ledger No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="foliono">Folio No.</label>
+      <input type="text" class="form-control" id="foliono" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.foliono" name="foliono" #foliono="ngModel">
+      <div [hidden]="foliono.valid || foliono.pristine" class="alert alert-danger">
+        Folio No. is required
+      </div>
+    </div>
+    <div class="form-group col-md-4">
+      <label for="loanacfoliono">Loan A/C Folio No.</label>
+      <input type="text" class="form-control" id="loanacfoliono" placeholder="Enter Agreement Acre" required
+        [(ngModel)]="ryot.loanacfoliono" name="loanacfoliono" #loanacfoliono="ngModel">
+      <div [hidden]="loanacfoliono.valid || loanacfoliono.pristine" class="alert alert-danger">
+        Loan A/C Folio No. is required
+      </div>
+    </div> 
+     <div class="form-group col-md-4">
+          <label for="getpictureurl">Get Picture Url</label>
+          <input type="text" class="form-control" id="getpictureurl" placeholder="Enter Agreement Acre" required
+            [(ngModel)]="ryot.getpictureurl" name="getpictureurl" #getpictureurl="ngModel">
+          <div [hidden]="getpictureurl.valid || getpictureurl.pristine" class="alert alert-danger">
+              Get Picture Url is required
+          </div>
+        </div>-->
+
+
+
+
+    <div class="btn-group btn-group-sm col-md-12">
+      <button type="button" class="btn btn-primary" (click)="addRyotDetailForm.reset()">Clear</button>
+      <button type="button" class="btn btn-primary" (click)="addRyotDetail()"
+        [disabled]="!addRyotDetailForm.form.valid">Save</button>
+    </div>
+  </form>
+</div>
+<div [hidden]="!submitted" class="col-md-12">  
+  <!-- <p>Submitted Successfully! 
+           <span class="badge badge-light">{{ryot.season}}  {{ryot.ryotcode}}  {{ryot.ryotname}}</span>
+          </p> -->
+   <div class="btn-group btn-group-sm">
+    <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+    <button type="button" class="btn btn-primary"
+      (click)="newRyot(); addRyotDetailForm.reset()">Continue</button>
+  </div> 
+ </div>
+
+

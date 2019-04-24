@@ -1,0 +1,48 @@
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a routerLink="/plots" class="navbar-brand">PIATRIKA</a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a routerLink="/plots">Home</a>
+          </li>
+          <li> 
+            <a routerLink="plot/add">Plot</a>
+          </li>
+          <li> 
+            <a routerLink="ryot/add">Ryot</a>
+          </li>
+          <li>
+            <a routerLink="/settings">Settings</a>
+          </li>
+          <li>
+            <a routerLink="/transaction">Transaction</a>
+          </li>
+          <li>
+            <a routerLink="/vehicle">Vehicle</a>
+          </li>
+          <li> 
+            <a routerLink="/billing">Billing</a>
+          </li>
+          <li>
+            <a routerLink="/dashboard">Dashboard</a>
+          </li>
+          <li>
+            <a routerLink="/ryots">Reports</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container" id="maincontainer">
+    <router-outlet></router-outlet>
+  </div>
+  

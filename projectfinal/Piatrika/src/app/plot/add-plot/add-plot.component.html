@@ -1,0 +1,184 @@
+<div class="container">
+    <div [hidden]="submitted">
+        <form #addPlotDetailForm="ngForm">
+
+          <div class="form-group col-md-4">
+            <label for="season">Season (select one):</label>
+            <select class="form-control" id="season" [(ngModel)]="plot.season" name="season" #season="ngModel">
+
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+            </select>
+
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="csi">CSI</label>
+            <input type="text" class="form-control" id="csi" placeholder="Enter Csi" required
+              [(ngModel)]="plot.csi" name="csi" #csi="ngModel">
+            <div [hidden]="csi.valid || csi.pristine" class="alert alert-danger">
+              Csi is required
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="section">Section</label>
+            <input type="text" class="form-control" id="section" placeholder="Enyter Section" required
+              [(ngModel)]="plot.section" name="section" #section="ngModel">
+            <div [hidden]="section.valid || section.pristine" class="alert alert-danger">
+              section is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="offerno">Offer No</label>
+            <input type="text" class="form-control" id="offerno" placeholder="Enter offerno" required
+              [(ngModel)]="plot.offerno" name="offerno" #offerno="ngModel">
+            <div [hidden]="offerno.valid || offerno.pristine" class="alert alert-danger">
+              Offer No is required
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="offerdate">Offer Date</label>
+            <input type="date" class="form-control" id="offerdate" placeholder="Enter offerdate" required
+              [(ngModel)]="plot.offerdate" name="offerdate" #offerdate="ngModel">
+            <div [hidden]="offerdate.valid || offerdate.pristine" class="alert alert-danger">
+              Offer Date is required
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="planteddate">Planted Date</label>
+            <input type="date" class="form-control" id="planteddate" placeholder="Enter planteddate" required
+              [(ngModel)]="plot.planteddate" name="planteddate" #planteddate="ngModel">
+            <div [hidden]="planteddate.valid || planteddate.pristine" class="alert alert-danger">
+              Planted Date is required
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="plottype">Plot Type (select one):</label>
+            <select class="form-control" id="plottype" id="plottype" [(ngModel)]="plot.plottype" name="plottype"
+              #plottype="ngModel">
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+              <option value="2">4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="plotno">Plot No</label>
+            <input type="text" class="form-control" id="plotno" placeholder="Enter PlotNo" required
+              [(ngModel)]="plot.plotno" name="plotno" #plotno="ngModel">
+            <div [hidden]="plotno.valid || plotno.pristine" class="alert alert-danger">
+              Plot text is required
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="ryot">Ryot</label>
+            <input type="text" class="form-control" id="ryot" placeholder="Enter ryot" required
+              [(ngModel)]="plot.ryot" name="ryot" #ryot="ngModel">
+            <div [hidden]="ryot.valid || ryot.pristine" class="alert alert-danger">
+              Ryot is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="village">Village</label>
+            <input type="text" class="form-control" id="village" placeholder="Enter village" required
+              [(ngModel)]="plot.village" name="village" #village="ngModel">
+            <div [hidden]="village.valid || village.pristine" class="alert alert-danger">
+              Village is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="distance">Distance</label>
+            <input type="text" class="form-control" id="distance" placeholder="Enter distance" required
+              [(ngModel)]="plot.distance" name="distance" #distance="ngModel">
+            <div [hidden]="distance.valid || distance.pristine" class="alert alert-danger">
+              Distance is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="rationtype">Plot/Ration Type (select one):</label>
+            <select class="form-control" id="rationtype" id="rationtype" [(ngModel)]="plot.rationtype"
+              name="rationtype" #plottype="ngModel">
+
+              <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="agreementacre">Agreement Acre</label>
+            <input type="text" class="form-control" id="agreementacre" placeholder="Enter Agreement Acre" required
+              [(ngModel)]="plot.agreementacre" name="agreementacre" #agreementacre="ngModel">
+            <div [hidden]="agreementacre.valid || agreementacre.pristine" class="alert alert-danger">
+              Agreement Acre is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="agreementedtonne">Agreemented Tonne</label>
+            <input type="text" class="form-control" id="agreementedtonne" placeholder="Enter Agreement Acre"
+              required [(ngModel)]="plot.agreementedtonne" name="agreementedtonne" #agreementedtonne="ngModel">
+            <div [hidden]="agreementedtonne.valid || agreementedtonne.pristine" class="alert alert-danger">
+              Agreemented Tonne is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="measuredarea">Measured Area</label>
+            <input type="text" class="form-control" id="measuredarea" placeholder="Enter Agreement Acre" required
+              [(ngModel)]="plot.measuredarea" name="measuredarea" #measuredarea="ngModel">
+            <div [hidden]="measuredarea.valid || measuredarea.pristine" class="alert alert-danger">
+              Measured Area is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="guarantor1">Guarantor1</label>
+            <input type="text" class="form-control" id="guarantor1" placeholder="Enter Guarantor1" required
+              [(ngModel)]="plot.guarantor1" name="guarantor1" #guarantor1="ngModel">
+            <div [hidden]="guarantor1.valid || guarantor1.pristine" class="alert alert-danger">
+              Guarantor1 is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="guarantor2">Guarantor2</label>
+            <input type="text" class="form-control" id="guarantor2" placeholder="Enter Guarantor2" required
+              [(ngModel)]="plot.guarantor2" name="guarantor2" #guarantor2="ngModel">
+            <div [hidden]="guarantor2.valid || guarantor2.pristine" class="alert alert-danger">
+              Guarantor2 is required
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="guarantorname">Guarantor Name</label>
+            <input type="text" class="form-control" id="guarantorname" placeholder="Enter Agreement Acre" required
+              [(ngModel)]="plot.guarantorname" name="guarantorname" #guarantorname="ngModel">
+            <div [hidden]="guarantorname.valid || guarantorname.pristine" class="alert alert-danger">
+              Guarantor Name is required
+            </div>
+          </div>
+
+
+
+
+          <div class="btn-group btn-group-sm col-md-12">
+            <button type="button" class="btn btn-primary" (click)="addPlotDetailForm.reset()">Clear</button>
+            <button type="button" class="btn btn-primary" (click)="addPlotdetail()"
+              [disabled]="!addPlotDetailForm.form.valid">Save</button>
+          </div>
+        </form>
+      </div> 
+  </div>
+  <div [hidden]="!submitted" class="col-md-12">
+       
+      <div class="btn-group btn-group-sm">
+        <button type="button" class="btn btn-primary" (click)="goBack()">Back</button>
+        <button type="button" class="btn btn-primary"
+          (click)="newPlot(); addPlotDetailForm.reset()">Continue</button>
+      </div>
+    </div> 

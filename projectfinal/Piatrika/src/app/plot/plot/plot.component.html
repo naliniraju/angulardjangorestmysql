@@ -1,0 +1,68 @@
+<!-- <h5>All Customers</h5>
+<div *ngFor="let plot of plots; let rowIndex=index">
+  <a [routerLink]="['/plots', plot.id]" style="color:black"><span class="badge badge-dark">{{rowIndex + 1}}</span> -> {{plot.season}}</a>
+</div> -->
+
+<!-- /oowipoiroiroire -->
+<div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Season</th>
+          <th>Csi</th>
+          <th>Section</th>
+          <th>Offer No</th>
+          <th>Offer Date</th>
+          <th>Planted date</th>
+          <th>Plot type</th>
+          <th>Plot No.</th>
+          <th>Ryot</th>
+          <th>Village</th>
+          <th>Distance</th>
+          <th>Ration Type</th>
+          <th>Agreement Acre</th>
+          <th>Agrremented Tone</th>
+          <th>Measured Area</th>
+          <th>Guarantor1</th>
+          <th>Guarantor2</th>
+          <th>Guarantorname</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plot of plots">
+          <td>{{plot.id}}</td>
+          <td>{{plot.season}}</td>
+          <td>{{plot.csi}}</td>
+          <td>{{plot.section}}</td>
+          <td>{{plot.offerno}}</td>
+          <td>{{plot.offerdate}}</td>
+          <td>{{plot.planteddate}}</td>
+          <td>{{plot.plottype}}</td>
+          <td>{{plot.plotno}}</td>
+          <td>{{plot.ryot}}</td>
+          <td>{{plot.village}}</td>
+          <td>{{plot.distance}}</td>
+          <td>{{plot.rationtype}}</td>
+          <td>{{plot.agreementacre}}</td>
+          <td>{{plot.agreementedtonne}}</td>
+          <td>{{plot.measuredarea}}</td>
+          <td>{{plot.guarantor1}}</td>
+          <td>{{plot.guarantor2}}</td>
+          <td>{{plot.guarantorname}}</td>
+          <td>
+            <div class="btn-group btn-group-sm" style="background-color: transparent;">
+              <button class="btn btn-primary myspan" [routerLink]="['/plots', plot.id]">Edit</button>
+              <span></span>
+              <button class="btn btn-danger myspan" (click)="delete(plot.id)">delete</button>
+            </div>
+          </td>
+  
+        </tr>
+  
+      </tbody>
+    </table>
+  
+  
+  </div>

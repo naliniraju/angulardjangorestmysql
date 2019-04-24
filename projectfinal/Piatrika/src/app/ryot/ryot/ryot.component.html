@@ -1,0 +1,83 @@
+<div>
+  <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Ryot Code</th>
+          <th>Ryot Name</th>
+          <th>Group Ref No.</th>
+          <th>F/W/G Name</th>
+          <th>Village Code</th>
+          <th>Village Name</th>
+          <th>Mandal Code</th>
+          <th>Mandal Name</th>
+          <th>CSI Code</th>
+          <th>CSI Name</th>
+          <th>Selection Code</th>
+          <th>Selection Name</th>
+          <th>Literary Status</th>
+          <th>Email</th>
+          <th>Address1</th>
+          <th>Address2</th>
+          <th>City</th>
+          <th>Pay Mode</th>
+          <th>Land No.</th>
+          <th>Mobile No.</th>
+          <th>Bank Code</th>
+          <th>Bank Name</th>
+          <th>SB A/C No.</th>
+          <th>Loan A/C No.</th>
+          <th>Ledger No.</th>
+          <th>Loan Account Ledger No.</th>
+          <th>Folio No.</th>
+          <th>Loan A/C Folio No.</th>
+          <!-- <th>Get Picture</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ryot of ryots">
+            <!-- <td>{{ryot.id}}</td> -->
+          <td>{{ryot.ryotcode}}</td>
+          <td>{{ryot.ryotname}}</td>
+          <td>{{ryot.grouprefno}}</td>
+          <td>{{ryot.fwgname}}</td>
+          <td>{{ryot.villagecode}}</td>
+          <td>{{ryot.villagename}}</td>
+          <td>{{ryot.mandalcode}}</td>
+          <td>{{ryot.mandalname}}</td>
+          <td>{{ryot.csicode}}</td>
+          <td>{{ryot.csiname}}</td>
+          <td>{{ryot.sectioncode}}</td>
+          <td>{{ryot.sectionname}}</td>
+          <td>{{ryot.literarystatus}}</td>
+          <td>{{ryot.email}}</td>
+          <td>{{ryot.address1}}</td>
+          <td>{{ryot.address2}}</td>
+          <td>{{ryot.city}}</td>
+          <td>{{ryot.paymode}}</td>
+          <td>{{ryot.landno}}</td>
+          <td>{{ryot.mobileno}}</td>
+          <td>{{ryot.bankcode}}</td>
+          <td>{{ryot.bankname}}</td>
+          <td>{{ryot.sbacno}}</td>
+          <td>{{ryot.loanacno}}</td>
+          <td>{{ryot.ledgerno}}</td>
+          <td>{{ryot.loanaccountledgerno}}</td>
+          <td>{{ryot.foliono}}</td>
+          <td>{{ryot.loanacfoliono}}</td>
+          <!-- <td>{{ryot.getpictureurl}}</td> -->
+          <td>
+            <div class="btn-group btn-group-sm" style="background-color: transparent;">
+              <button class="btn btn-primary myspan" [routerLink]="['/ryots', ryot.id]">Edit</button>
+              <span></span>
+              <button class="btn btn-danger myspan" (click)="delete(ryot.id)">delete</button>
+            </div>
+          </td>
+          
+        </tr>
+      
+      </tbody>
+    </table>
+ 
+
+</div>
+

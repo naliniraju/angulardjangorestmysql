@@ -1,0 +1,56 @@
+from django.db import models
+from datetime import date
+# Create your Plot models here.
+
+class Plot(models.Model):
+    season=models.CharField(max_length=70, blank=False, default='')
+    csi=models.CharField(max_length=70, blank=False, default='')
+    section=models.CharField(max_length=70, blank=False, default='')
+    offerno=models.CharField(max_length=70, blank=False, default='')
+    offerdate=models.DateField(blank=True,null=True)
+    planteddate=models.DateField(blank=True,null=True)
+    plottype=models.CharField(max_length=70, blank=False, default='')
+    plotno=models.CharField(max_length=70, blank=False, default='')
+    ryot=models.CharField(max_length=70, blank=False, default='')
+    village=models.CharField(max_length=70, blank=False, default='')
+    distance=models.CharField(max_length=70, blank=False, default='')
+    rationtype=models.CharField(max_length=70, blank=False, default='')
+    agreementacre=models.CharField(max_length=70, blank=False, default='')
+    agreementedtonne=models.CharField(max_length=70, blank=False, default='')
+    measuredarea=models.CharField(max_length=70, blank=False, default='')
+    guarantor1=models.CharField(max_length=70, blank=False, default='')
+    guarantor2=models.CharField(max_length=70, blank=False, default='')
+    guarantorname=models.CharField(max_length=70, blank=False, default='')
+
+    
+
+# Create your Ryot models here.
+class Ryot(models.Model):
+    ryotcode=models.CharField(max_length=70, blank=False, default='')
+    ryotname=models.CharField(max_length=70, blank=False, default='')
+    grouprefno=models.CharField(max_length=70, blank=False, default='')
+    fwgname=models.CharField(max_length=70, blank=False, default='')
+    villagecode=models.CharField(max_length=70, blank=False, default='')
+    villagename=models.CharField(max_length=70, blank=False, default='')
+    mandalcode=models.CharField(max_length=70, blank=False, default='')
+    mandalname=models.CharField(max_length=70, blank=False, default='')
+    csicode=models.CharField(max_length=70, blank=False, default='')
+    csiname=models.CharField(max_length=70, blank=False, default='')
+    sectioncode=models.CharField(max_length=70, blank=False, default='')
+    sectionname=models.CharField(max_length=70, blank=False, default='')
+    literarystatus=models.CharField(max_length=70, blank=False, default='')
+    email=models.CharField(max_length=70, blank=False, default='')
+    address1=models.CharField(max_length=70, blank=False, default='')
+    address2=models.CharField(max_length=70, blank=False, default='')
+    city=models.CharField(max_length=70, blank=False, default='')
+    paymode=models.CharField(max_length=70, blank=False, default='')
+    landno=models.CharField(max_length=70, blank=False, default='')
+    mobileno=models.CharField(max_length=70, blank=False, default='')
+    bankcode=models.CharField(max_length=70, blank=False, default='')
+    bankname=models.CharField(max_length=70, blank=False, default='')
+    sbacno=models.CharField(max_length=70, blank=False, default='')
+    loanacno=models.CharField(max_length=70, blank=False, default='')
+    ledgerno=models.CharField(max_length=70, blank=False, default='')
+    loanaccountledgerno=models.CharField(max_length=70, blank=False, default='')
+    foliono=models.CharField(max_length=70, blank=False, default='')
+    loanacfoliono=models.CharField(max_length=70, blank=False, default='')
