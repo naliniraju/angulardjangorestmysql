@@ -29,7 +29,7 @@ const routes: Routes = [
   },
   { 
     path: '', 
-    redirectTo: 'plots', 
+    redirectTo: 'ryot/add', 
     pathMatch: 'full'
   }, 
   { 

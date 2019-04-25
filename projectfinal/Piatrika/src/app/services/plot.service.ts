@@ -13,7 +13,7 @@ export class PlotService {
   plot:Plot = new Plot();
   submitted = false;
   plots: Plot[];
-  private piatrikaUrl = 'http://localhost:3001/plots';  // URL to web api
+  private piatrikaUrl = 'http://localhost:3000/plots';  // URL to web api
   constructor( 
     private http: HttpClient
   ) { }
